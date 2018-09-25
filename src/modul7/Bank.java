@@ -88,7 +88,7 @@ public class Bank {
                     tempArray[indexcount] = customer;
                     indexcount++;
                 } else {
-                    System.out.println("Customer Id: " + i + " has been removed from the Customer Database!");
+                    System.out.println("Customer Id: " + i + " Name: "+customer.getName()+" Balance: "+customer.getBalance()+" has been removed from the Customer Database!");
                 }
             }
             customers = tempArray;
