@@ -17,15 +17,15 @@ package modul7;
             System.out.println("Empty database has been created");
         }
 
-        public void addCustomer(Customer c) {
+        public void addCustomer(Customer customer) {
             Customer[] tempArray = new Customer[customers.length + 1];
             System.arraycopy(customers, 0, tempArray, 0, customers.length);
-            tempArray[tempArray.length - 1] = c;
-            System.out.println("Customer id:" + c.getId() + " Name: " + c.getName() + " Balance: " + c.getBalance() + " has been added to the Customer Database");
+            tempArray[tempArray.length - 1] = customer;
+            System.out.println("Customer id:" + customer.getId() + " Name: " + customer.getName() + " Balance: " + customer.getBalance() + " has been added to the Customer Database");
             customers = tempArray;
         }
 
-        public void removeCustomer(int i) {
+        public void removeCustomer(int id) {
             Customer[] tempArray = new Customer[customers.length - 1];
             int indexcount = 0;
             /*
@@ -34,11 +34,11 @@ package modul7;
             }
             */
             for (Customer customer : customers) {
-                if (customer.getId() != i) {
+                if (customer.getId() != id) {
                     tempArray[indexcount] = customer;
                     indexcount++;
                 } else {
-                    System.out.println("Customer Id: " + i + " Name: " + customer.getName() + " Balance: " + customer.getBalance() + " has been removed from the Customer Database!");
+                    System.out.println("Customer Id: " + id + " Name: " + customer.getName() + " Balance: " + customer.getBalance() + " has been removed from the Customer Database!");
                 }
             }
             customers = tempArray;

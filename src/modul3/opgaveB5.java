@@ -16,7 +16,7 @@ public class opgaveB5 {
         //Initiliaze the prime variable so we can use it outside the loop
         int prime = 0;
         // For loop that runs until 1000000
-        for (int i = 3; i < 1000000; i++) {
+        for (int i = 2; i < 1000000; i++) {
             boolean isPrime = true;
             //Check if prime, if not break
             for (int devisor = 2; devisor <= i / 2; devisor++) {

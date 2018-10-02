@@ -17,7 +17,7 @@ public class fem7 {
         double tuition = 10000;
         //Anual Intrest on 6%
         double intrest = 0.06;
-        //Calculate tuition based on 6% intrest over 10 years rounded to 2 decimals
+        //Calculate tuition based on 6% intrest over 10 years roundedto 2 decimals
         tuition = tuition * Math.pow(1 + intrest, 10);
         System.out.println("Tuition after 10 years is $" + Math.round(tuition*100.0)/100.0);
 

@@ -17,8 +17,10 @@ public class Modul3 {
      */
     public static void main(String[] args) {
         //threeone.main(args);
+        //fem3.main(args);
         //fem5.main(args);
-        opgaveB5.main(args);
+        //opgaveB5.main(args);
+        System.out.println("2+1="+(2+1));
         
     }
 

@@ -18,13 +18,11 @@ public class fem5 {
 
     public static void main(String[] args) {
         System.out.println("Celcius\tFahrenheit\t|\tFahrenheit\tCelcius");
-        for (int i = 0; i <=100; i = i + 2) {
-                double f = (i * 9);
-            double f2 = f / 5 + 32;
-            int f3 = i / 2 * 5 + 20;
-            double fc = (f3-32)/1.8;
-            System.out.printf("%-3d\t   %1.3f\t|\t%-3d \t\t%1.3f \n", i,f2,f3,fc);
-
+        for (int i = 0; i <= 100; i = i + 2) {
+            double f = (i * 9.0 / 5 + 32);
+            int f2 = i / 2 * 5 + 20;
+            double fc = (f2 - 32) / 1.8;
+            System.out.printf("%-3d\t   %1.3f\t|\t%-3d \t\t%1.3f \n", i, f, f2, fc);
         }
     }
 
