@@ -25,6 +25,8 @@ public class Store {
         Lager.addProduct(b);
         Lager.addProduct(c);
         Lager.getProducts();
+        Lager.removeProduct(2);
+        Lager.getProducts();
         Lager.getTotal();
     }
     
