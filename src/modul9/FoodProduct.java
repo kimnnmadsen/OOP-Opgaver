@@ -23,7 +23,7 @@ public class FoodProduct extends Product{
     
     @Override
     public String toString(){
-        return super.getName() + " Udløber " + this.exp.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+        return getName() + " Udløber " + exp.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
     }
     
 }
